@@ -2,7 +2,7 @@
 % Please edit documentation in R/testvar.R
 \name{testvar}
 \alias{testvar}
-\title{Significance Test for (some) Random Effects
+\title{Significance Test for Random Effects
 
 Calculates the p-value for the test of the slope variance and intercept-slope covariance using the likelihood ratio test method.}
 \usage{
@@ -16,7 +16,7 @@ testvar(outp, p = "intercept", testcov = FALSE)
 \item{testcov}{is FALSE by default for the variance component. If testcov = TRUE, the function retuns the test of the intercept-component covariance.}
 }
 \description{
-Significance Test for (some) Random Effects
+Significance Test for Random Effects
 
 Calculates the p-value for the test of the slope variance and intercept-slope covariance using the likelihood ratio test method.
 }

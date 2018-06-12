@@ -66,7 +66,7 @@ testvar <- function(outp, p = "intercept", testcov = FALSE){
 
   if(testcov){
     fff <- -2*logLik(mod_sep)[1]+2*logLik(mod_full)[1]
-    pval <- pvalCorrected(as.numeric(fff), 1)
+    pval <- pchisq(fff, 1, lower.tail=FALSE)
 
     return(data.frame(Var1 = ran_list$var1[1],
                       Var2 = ran_list$var2[1],
